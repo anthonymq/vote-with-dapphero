@@ -15,7 +15,7 @@
   <body>
     <div>
       <h1>
-        Page de connection à Ethereum
+        Vote on Ethereum
       </h1>
 
       <div>
@@ -32,82 +32,13 @@
 
       <br />
 
-      <div>
-        Votre addresse de portefeuille :
-        <div
-          style="margin-bottom: 25px"
-          data-dh-feature="user"
-          data-dh-property-address="true"
-        >
-          *User Address*
-        </div>
-
-        Solde de votre compte : 
-        <div
-          style="margin-bottom: 25px"
-          data-dh-feature="user"
-          data-dh-property-balance
-          data-dh-modifier-units="ether"
-          data-dh-modifier-decimals="3"
-        >
-          *User Balance*
-        </div> eth
-
-        Network ID:
-        <div
-          style="margin-bottom: 25px"
-          data-dh-feature="network"
-          data-dh-property-id
-        >
-          *network ID placeholder*
-        </div>
-
-        Network Name:
-        <div
-          style="margin-bottom: 25px"
-          data-dh-feature="network"
-          data-dh-property-name
-        >
-          *network name placeholder*
-        </div>
-
-        Network Provider:
-
-        <div
-          style="margin-bottom: 25px"
-          data-dh-feature="network"
-          data-dh-property-provider
-        >
-          *provider name placeholder*
-        </div>
-
-        Network Transfer Eth:
-
-        <input
-          data-dh-feature="network"
-          data-dh-property-transfer="input"
-          data-dh-property-input-name="amount"
-          data-dh-modifier-display-units="ether"
-          placeholder="amount to send"
-        />
-
-        <br />
-        <input
-          data-dh-feature="network"
-          data-dh-property-transfer="input"
-          data-dh-property-input-name="address"
-          placeholder="recipient address"
-        />
-
-        <button data-dh-feature="network" data-dh-property-transfer="invoke">
-          Transfer Now
-        </button>
-
-        <div data-dh-feature="network" data-dh-property-transfer="output">
-          *transaction hash here*
-        </div>
-      </div>
-    </div>
+      <div
+    data-dh-feature="customContract"
+    data-dh-property-contract-name="esensvote"
+    data-dh-property-method-name="hello"
+    data-dh-property-method-id="000"
+    data-dh-property-auto-invoke="true"
+>
 
     <script
       src="https://package.dapphero.io/main.js"
