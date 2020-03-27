@@ -17,8 +17,9 @@
       <h1>
         Page de connection à Ethereum
       </h1>
-      
-      Metamask:
+
+      <div>
+        Metamask:
 
         <button
           style="margin-top: 25px"
@@ -27,37 +28,58 @@
         >
           Activer
         </button>
+      </div>
+
+      <br />
 
       <div>
-        Network ID:
+        Votre addresse de portefeuille :
+        <div
+          style="margin-bottom: 25px"
+          data-dh-feature="user"
+          data-dh-property-address="true"
+        >
+          *User Address*
+        </div>
 
-        <h2
+        Solde de votre compte : 
+        <div
+          style="margin-bottom: 25px"
+          data-dh-feature="user"
+          data-dh-property-balance
+          data-dh-modifier-units="ether"
+          data-dh-modifier-decimals="3"
+        >
+          *User Balance*
+        </div> eth
+
+        Network ID:
+        <div
           style="margin-bottom: 25px"
           data-dh-feature="network"
           data-dh-property-id
         >
           *network ID placeholder*
-        </h2>
+        </div>
 
         Network Name:
-
-        <h2
+        <div
           style="margin-bottom: 25px"
           data-dh-feature="network"
           data-dh-property-name
         >
           *network name placeholder*
-        </h2>
+        </div>
 
         Network Provider:
 
-        <h2
+        <div
           style="margin-bottom: 25px"
           data-dh-feature="network"
           data-dh-property-provider
         >
           *provider name placeholder*
-        </h2>
+        </div>
 
         Network Transfer Eth:
 
@@ -84,8 +106,6 @@
         <div data-dh-feature="network" data-dh-property-transfer="output">
           *transaction hash here*
         </div>
-
-      
       </div>
     </div>
 
