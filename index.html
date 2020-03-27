@@ -53,9 +53,10 @@
             *Premier scrutin*
           </h3>
         </div>
-        <div id="propositions">
-          <div class="proposition">
-            <input
+        <table>
+          <tbody>
+            <tr>
+              <input
               data-dh-feature="customContract"
               data-dh-property-contract-name="esensvote"
               data-dh-property-method-name="getProposalName"
@@ -65,7 +66,7 @@
               value="0"
               style="display:none;"
             />
-            <p
+            <div
               data-dh-property-method-id="getProposalName0"
               data-dh-property-outputs="true"
               data-dh-modifier-contract-units="bytes32"
@@ -73,17 +74,26 @@
               class="component-div"
             >
               *Proposition*
-            </p>
-
-            <input type="button" 
+            </div>
+              <td>The table body</td>
+              <td>with two columns</td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="propositions">
+          <div class="proposition">
+            
+            <button
               data-dh-feature="customContract"
               data-dh-property-contract-name="esensvote"
               data-dh-property-method-name="submitVote"
-              data-dh-property-method-id="getProposalName0"
-              data-dh-property-input-name="_proposalId"
+              data-dh-property-method-id="vote0"
+              data-dh-property-input-name="_propositionId"
+              data-dh-property-invoke="true"
               value="0"
-            />
-              
+            >
+              Vote
+            </button>
           </div>
           <div class="proposition">
             <input
