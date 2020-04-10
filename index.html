@@ -44,7 +44,7 @@
                 style="display:none;"
               />
               <th
-                colspan="2"
+                colspan="3"
                 data-dh-property-method-id="getScrutinName"
                 data-dh-property-outputs="true"
                 data-dh-modifier-contract-units="bytes32"
@@ -73,7 +73,7 @@
                 data-dh-property-method-id="getProposalPourcentage0"
                 data-dh-property-input-name="_proposalId"
                 data-dh-property-auto-invoke="true"
-                value="1"
+                value="0"
                 style="display:none;"
               />
               <td>
@@ -98,12 +98,17 @@
               >
                 *Proposition*
               </td>
-              <td
-                data-dh-property-method-id="getProposalPourcentage0"
-                data-dh-property-outputs="true"
-                class="component-div"
-              >
+              <td>
+                <p
+                  data-dh-property-method-id="getProposalPourcentage0"
+                  data-dh-property-outputs="true"
+                  class="component-div"
+                >
                 *Result*
+                </p><p>
+                %
+                </p>
+                
               </td>
             </tr>
             <tr>
@@ -112,6 +117,16 @@
                 data-dh-property-contract-name="esensvote"
                 data-dh-property-method-name="getProposalName"
                 data-dh-property-method-id="getProposalName1"
+                data-dh-property-input-name="_proposalId"
+                data-dh-property-auto-invoke="true"
+                value="1"
+                style="display:none;"
+              />
+              <input
+                data-dh-feature="customContract"
+                data-dh-property-contract-name="esensvote"
+                data-dh-property-method-name="getProposalPourcentage"
+                data-dh-property-method-id="getProposalPourcentage1"
                 data-dh-property-input-name="_proposalId"
                 data-dh-property-auto-invoke="true"
                 value="1"
@@ -139,6 +154,13 @@
               >
                 *Proposition*
               </td>
+              <td
+                data-dh-property-method-id="getProposalPourcentage1"
+                data-dh-property-outputs="true"
+                class="component-div"
+              >
+                *Result*
+              </td>
             </tr>
             <tr>
               <input
@@ -146,6 +168,16 @@
                 data-dh-property-contract-name="esensvote"
                 data-dh-property-method-name="getProposalName"
                 data-dh-property-method-id="getProposalName2"
+                data-dh-property-input-name="_proposalId"
+                data-dh-property-auto-invoke="true"
+                value="2"
+                style="display:none;"
+              />
+              <input
+                data-dh-feature="customContract"
+                data-dh-property-contract-name="esensvote"
+                data-dh-property-method-name="getProposalPourcentage"
+                data-dh-property-method-id="getProposalPourcentage2"
                 data-dh-property-input-name="_proposalId"
                 data-dh-property-auto-invoke="true"
                 value="2"
@@ -172,6 +204,13 @@
                 class="component-div"
               >
                 *Proposition*
+              </td>
+              <td
+                data-dh-property-method-id="getProposalPourcentage2"
+                data-dh-property-outputs="true"
+                class="component-div"
+              >
+                *Result*
               </td>
             </tr>
           </tbody>
