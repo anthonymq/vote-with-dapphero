@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
+    <title>Esens vote with DappHero</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
   </head>
   <body>
     <div>
       <h1>
-        Vote on Ethereum
+        Vote sur Ethereum
       </h1>
 
       <div>
@@ -29,7 +26,7 @@
           Activer
         </button>
       </div>
-      <div>The deployed demo contract is on the Ropsten network</div>
+      <div>Le contrat est déployé sur Ropsten</div>
 
       <br />
       <div id="premier-scrutin">
@@ -69,13 +66,23 @@
                 value="0"
                 style="display:none;"
               />
+              <input
+                data-dh-feature="customContract"
+                data-dh-property-contract-name="esensvote"
+                data-dh-property-method-name="getProposalPourcentage"
+                data-dh-property-method-id="getProposalPourcentage0"
+                data-dh-property-input-name="_proposalId"
+                data-dh-property-auto-invoke="true"
+                value="1"
+                style="display:none;"
+              />
               <td>
                 <button
                   data-dh-feature="customContract"
                   data-dh-property-contract-name="esensvote"
                   data-dh-property-method-name="submitVote"
                   data-dh-property-method-id="vote0"
-                  data-dh-property-input-name="_propositionId"
+                  data-dh-property-input-name="_proposalId"
                   data-dh-property-invoke="true"
                   value="0"
                 >
@@ -90,6 +97,13 @@
                 class="component-div"
               >
                 *Proposition*
+              </td>
+              <td
+                data-dh-property-method-id="getProposalPourcentage0"
+                data-dh-property-outputs="true"
+                class="component-div"
+              >
+                *Result*
               </td>
             </tr>
             <tr>
@@ -109,7 +123,7 @@
                   data-dh-property-contract-name="esensvote"
                   data-dh-property-method-name="submitVote"
                   data-dh-property-method-id="vote1"
-                  data-dh-property-input-name="_propositionId"
+                  data-dh-property-input-name="_proposalId"
                   data-dh-property-invoke="true"
                   value="1"
                 >
@@ -143,7 +157,7 @@
                   data-dh-property-contract-name="esensvote"
                   data-dh-property-method-name="submitVote"
                   data-dh-property-method-id="vote2"
-                  data-dh-property-input-name="_propositionId"
+                  data-dh-property-input-name="_proposalId"
                   data-dh-property-invoke="true"
                   value="2"
                 >
